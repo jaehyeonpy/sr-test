@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  sr-test-backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+      args:
+        BASE_IMAGE: python:3.11.8-bookworm
+    command: 
+      - /bin/sh
+      - -ce
+      - |
+        apt update
+        
+        cd backend
+        python manage.py migrate
+        
+        echo "now ready."
+        sleep infinity
+    ports:
+      - "8001:8000"
