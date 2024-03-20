@@ -57,6 +57,15 @@
     - 서버와 통신하여 로그인 성공/실패 메세지 출력 후 Home 페이지 이동
 - 준수하지 못한 제약사항
     - Vite 적용 안됨
+- 시험 운용
+```
+(경로 sr-test/frontend/frontend에서) npm install
+
+(같은 경로에서) npm start
+
+(home UI 보려면) http://localhost:3000/#/home
+```
+
 
 
 <br>
